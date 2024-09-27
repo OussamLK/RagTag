@@ -7,6 +7,9 @@ import pdf2image
 redis = Redis()
 from io import BytesIO
 import torch
+import logging
+logging.basicConfig(level=logging.INFO)
+
 
 def hash_digest(bytes:bytes):
     return sha256(bytes).digest()
@@ -40,10 +43,13 @@ def get_text(file:bytes,first_page=None, last_page=None, cache=False):
     doc = DocumentFile.from_images(images)
     model = ocr_predictor(det_arch='fast_base', reco_arch='crnn_mobilenet_v3_large', pretrained=True)
     if torch.cuda.is_available():
+        logging.info("Using CUDA")
         device = torch.device('cuda')
     elif torch.backends.mps.is_available():
+        logging.info("Using MPS - Apple Silicon")
         device = torch.device('mps')
     else:
+        logging.info("Not using acceleration, using CPU")
         device = torch.device('cpu')
     model.to(device)
     result = model(doc)
