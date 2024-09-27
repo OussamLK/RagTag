@@ -1,0 +1,12 @@
+.idea/
+.venv*/
+venv*/
+__pycache__/
+dist/
+.coverage*
+htmlcov/
+.tox/
+docs/_build/
+openai_api_key.sh
+*.pdf
+.env
