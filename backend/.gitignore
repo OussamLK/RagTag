@@ -10,3 +10,4 @@ docs/_build/
 openai_api_key.sh
 *.pdf
 .env
+*.rdb

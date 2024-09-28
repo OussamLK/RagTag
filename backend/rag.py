@@ -7,6 +7,7 @@ import embeddings
 from embeddings import Embedding
 from pprint import pprint
 from redis import Redis
+import logging; logging.basicConfig(level=logging.INFO)
 
 
 celery_app = Celery(
@@ -45,8 +46,10 @@ def cosine_similarity(embedding1, embedding2):
     return np.dot(embedding1, embedding2)/(np.linalg.norm(embedding1)*np.linalg.norm(embedding2))
 
 def best_matches(embeddings:list[Embedding], query:str, model:embeddings.EMBEDDING_MODEL, nb_results=5):
+    logging.info("Computing best matches")
     query_embedding = openai.embeddings.create(input=[query], model=model).data[0].embedding
     cosine_similaritie_scores = [dict(sentence=embedding['sentence'], score=cosine_similarity(query_embedding, embedding['embedding'])) for embedding in embeddings]
+    logging.info("Done computing cosine similarities")
     return sorted(cosine_similaritie_scores, key=lambda css: css['score'], reverse=True)[:nb_results]
 
 def main():
@@ -60,8 +63,8 @@ def main():
     model:embeddings.EMBEDDING_MODEL = 'text-embedding-3-large'
     sentence_embeddings = embeddings.sentence_embeddings(text, model, cache=True)
     matches = best_matches(sentence_embeddings, query, model)
-    for match in matches:
-        print(f"************score: {match['score']}")
+    for match in sorted(matches, key=lambda match: match['score']):
+        print(f"************score: {match['score']}\n")
         print(match['sentence'])
         print("\n***************************")
 
