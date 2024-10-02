@@ -1,7 +1,6 @@
 from typing import Callable, TypedDict, Iterable, Any
 from pprint import pprint
 import redis
-import json
 
 '''
 The task of corresponding chunk to a list of words is not trivial due to the problems of separators.
@@ -23,15 +22,13 @@ Observation:
 
 redis = redis.Redis()
 
-class Word[T](TypedDict):
-    text:str
-    metadata: T
+from ocr import OCRWord
 
-def get_chunks_metadata(chunks:Iterable[str], words:Iterable[Word]):
+def get_chunks_metadata(chunks:Iterable[str], words:Iterable[OCRWord])->list[list[OCRWord]]:
     chunks = (chunk for chunk in chunks)
     words = (word for word in words)
-    chunks_words:list[list[Word]] = []
-    chunk_words:list[Word] = []
+    chunks_words:list[list[OCRWord]] = []
+    chunk_words:list[OCRWord] = []
     try:
         chunk = next(chunks)
         word = next(words)
@@ -39,7 +36,18 @@ def get_chunks_metadata(chunks:Iterable[str], words:Iterable[Word]):
             while len(word) < len(chunk):
                 wp = chunk.find(word['text'])
                 if wp < 0:
-                    raise Exception(f"I can not find word: '{word}' in chunk:'{chunk}'")
+                    if word['text'][-1].isalnum():
+                        raise Exception(f"I can not find word: '{word['text']}' in chunk:'{chunk}'")
+                    #the last letter is probably some seperator
+                    i = len(word['text'])
+                    while not word['text'][i-1].isalnum() and i > 0:
+                        i-=1
+                    if i == 0:
+                        raise Exception(f"I can not find word: '{word['text']}' inside chunk {chunk} ")
+                    wp = chunk.find(word['text'][:i])
+                    if wp < 0:
+                        raise Exception(f"I can not find word: '{word['text'][:i]}' inside chunk {chunk} ")
+
                 chunk = chunk[wp+len(word['text']):]
                 chunk_words.append(word)
                 word = next(words)
@@ -56,45 +64,12 @@ Many organizations, including governments, publish and share their datasets. The
 
 The datasets from various governmental-bodies are presented in List of open government data sites. The datasets are ported on open data portals. They are made available for searching, depositing and accessing through interfaces like Open API. The datasets are made available as various sorted types and subtypes.'''
 
-import nltk
-chunks = nltk.sent_tokenize(source)
-
-word_list = (Word(text=text, metadata=f"position {i}") for i, text in enumerate(source.split()))
     
 if __name__ == '__main__':
-    import sys
-    if len(sys.argv) > 1 and sys.argv[1] == 'CHUNK':
-        pprint(chunks)
-        words = get_chunks_metadata(chunks, word_list)
-        print(" ".join(word['text'] for chunk in words for word in chunk))
-    else:
-        import nltk
-        from ocr import get_text, get_result
-        import pickle
-        import io
-        key = b'result yeti 10 40'
-        with open('yeti.pdf', 'rb') as f:
-            if rw:=redis.get(key):
-                with io.BytesIO() as f:
-                    data:bytes = redis.get(key) #type: ignore
-                    f.write(data)
-                    f.seek(0)
-                    result = pickle.load(f)
-            else:
-                file = f.read()
-                result = get_result(file, 10, 40, cache=True)
-                with io.BytesIO() as f:
-                    pickle.dump(result, f)
-                    f.seek(0)
-                    data = f.read()
-                    redis.set(key, data)
-            chunks = nltk.sent_tokenize(result.render(), language='french')
-            text = result.render()
-            separators = []
-            for chunk in chunks:
-                pos = text.find(chunk)
-                separators.append(text[:pos])
-                text = text[pos+len(chunk):]
-            multi_blocks = [len(page.blocks) for page in result.pages if len(page.blocks) > 1] 
-            print(multi_blocks)
-                
+    import nltk
+    from ocr import capture
+    with open('AO.pdf', 'rb') as f:
+        fb = f.read()
+        text, words = capture(fb, 20, 20)
+        chunks = nltk.sent_tokenize(text)
+        chunks_metadata = get_chunks_metadata(chunks, words)

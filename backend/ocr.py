@@ -2,22 +2,28 @@ import time
 import sys
 from redis import Redis
 from hashlib import sha256
-import json
-import pdf2image
 redis = Redis()
-from io import BytesIO
 import logging
 logging.basicConfig(level=logging.INFO)
-import cv2
-import numpy as np
 from overlay import highlight_boxes
+from typing import TypedDict
 
+class OCRWord(TypedDict):
+    text: str
+    geometry: tuple[tuple[float, float], tuple[float, float]]
 
-def sha_segment(file:bytes, first_page, last_page):
-    signature = f"{file}, pages {first_page}-{last_page}"
-    return sha256(signature.encode('utf-8')).digest()
+def capture(file:bytes, first_page: int, last_page:int, cache=False)->tuple[str, list[OCRWord]]:
+    '''Performs ocr on a pdf file given in bytes,
+    returns the entire text along with a list of word geometry'''
+    
+    result = _get_result(file, first_page=first_page, last_page=last_page, cache=cache)
+    words: list[OCRWord] = [OCRWord(text=word.render(), geometry=word.geometry) for page in result.pages #type: ignore
+                            for block in page.blocks
+                                for line in block.lines
+                                    for word in line.words]
+    return result.render(), words
 
-def get_result(file:bytes,first_page=None, last_page=None, cache=False):
+def _get_result(file:bytes,first_page=None, last_page=None, cache=False):
     from doctr.io import DocumentFile
     from doctr.models import ocr_predictor
     import torch
@@ -40,43 +46,15 @@ def get_result(file:bytes,first_page=None, last_page=None, cache=False):
     result = model(fragment)
     return result
 
-def get_text(file:bytes,first_page=None, last_page=None, cache=False):
-    hash = sha_segment(file, first_page, last_page)
-    if cache:
-            if res := redis.get(hash):
-                logging.info(f"Retrieving the text from Redis cache")
-                return res.decode('utf-8') #type: ignore
-    result = get_result(file, first_page=first_page, last_page=last_page, cache=cache)
-    result_str:str = result.render()
-    redis.set(hash, result_str.encode('utf-8'))
-    return result_str
+def _sha_segment(file:bytes, first_page, last_page):
+    signature = f"{file}, pages {first_page}-{last_page}"
+    return sha256(signature.encode('utf-8')).digest()
 
-def main():
-   path = input("Enter file path: ")
-   first_page_input = input("Enter first page or leave it blank: ")
-   last_page_input = input("Enter last page or leave it blank: ")
-   first_page = int(first_page_input) if first_page_input else None
-   last_page = int(last_page_input) if last_page_input else None
-   with open(path, 'rb') as f:
-       file = f.read()
-   start = time.time()
-   text = get_text(file, first_page=first_page, last_page=last_page, cache=False)
-   print(text, end='\n\n')
-   print(f"parsed in {time.time()-start}")
 
 if __name__ == '__main__':
     #test: python3 orc file_path.pdf
-    if len(sys.argv) > 1 and sys.argv[1] == 'TEST':
-        with open('yeti.pdf', 'br') as f:
-            fb = f.read()
-        result = get_result(fb, 22, 22)
-        page1 = result.pages[0].page
-        boxes= [word.geometry for line in result.pages[0].blocks[0].lines[:10] for word in line.words]
-        from pprint import pprint
-        pprint(boxes)
-        from doctr.io import DocumentFile
-        overlayed = highlight_boxes(page1, boxes)
-        overlayed.show()
-
-    else:
-        main()
+    from pprint import pprint
+    with open('AO.pdf', 'br') as f:
+        fb = f.read()
+    result = capture(fb, 22, 22)
+    pprint(result)

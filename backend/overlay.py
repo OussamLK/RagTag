@@ -4,11 +4,14 @@ logging.basicConfig(level=logging.DEBUG)
 from doctr.io import DocumentFile
 import numpy as np
 
-type Box = tuple[tuple[float, float], tuple[float, float]]
+type UpperLeft = tuple[float, float]
+type LowerRight = tuple[float, float]
+type WordGeometry = tuple[UpperLeft, LowerRight] # values are in [0,1]
 
+type ImageMatrix = np.ndarray[tuple[int, ...], np.dtype[np.uint8]]
 
-def highlight_boxes(im_mat, boxes:list[Box]):
-    im = Image.fromarray(im_mat).convert('RGBA')
+def highlight_boxes(image_matrix:ImageMatrix, boxes:list[WordGeometry]):
+    im = Image.fromarray(image_matrix).convert('RGBA')
     overlay = Image.new("RGBA", im.size, (255, 255, 255, 0))
     drawing = ImageDraw.Draw(overlay)
     for box in boxes:
