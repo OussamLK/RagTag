@@ -6,7 +6,6 @@ import json
 import pdf2image
 redis = Redis()
 from io import BytesIO
-import torch
 import logging
 logging.basicConfig(level=logging.INFO)
 import cv2
@@ -21,7 +20,8 @@ def sha_segment(file:bytes, first_page, last_page):
 def get_result(file:bytes,first_page=None, last_page=None, cache=False):
     from doctr.io import DocumentFile
     from doctr.models import ocr_predictor
-    model = ocr_predictor(det_arch='db_resnet50', reco_arch='crnn_mobilenet_v3_large', pretrained=True)
+    import torch
+    model = ocr_predictor(det_arch='db_resnet50',pretrained=True)
     if torch.cuda.is_available():
         logging.info("Using CUDA")
         device = torch.device('cuda')
@@ -33,8 +33,8 @@ def get_result(file:bytes,first_page=None, last_page=None, cache=False):
         device = torch.device('cpu')
     model.to(device)
     doc = DocumentFile.from_pdf(file)
-    first_page = first_page or 0
-    last_page = last_page or len(doc)
+    first_page = first_page or 1
+    last_page = last_page or len(doc)+1
     fragment = doc[first_page-1:last_page]
     logging.info(f"converting {len(fragment)} pages...")
     result = model(fragment)
@@ -67,9 +67,9 @@ def main():
 if __name__ == '__main__':
     #test: python3 orc file_path.pdf
     if len(sys.argv) > 1 and sys.argv[1] == 'TEST':
-        with open('AO.pdf', 'br') as f:
+        with open('yeti.pdf', 'br') as f:
             fb = f.read()
-        result = get_result(fb, 5, 10)
+        result = get_result(fb, 22, 22)
         page1 = result.pages[0].page
         boxes= [word.geometry for line in result.pages[0].blocks[0].lines[:10] for word in line.words]
         from pprint import pprint

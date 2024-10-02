@@ -61,7 +61,7 @@ def main():
         file = f.read()
     text = ocr.get_text(file, first_page=first_page, last_page=last_page, cache=True)
     model:embeddings.EMBEDDING_MODEL = 'text-embedding-3-large'
-    sentence_embeddings = embeddings.sentence_embeddings(text, model, cache=True)
+    sentence_embeddings = embeddings.sentence_embeddings(text, model, cache=False)
     matches = best_matches(sentence_embeddings, query, model)
     for match in sorted(matches, key=lambda match: match['score']):
         print(f"************score: {match['score']}\n")

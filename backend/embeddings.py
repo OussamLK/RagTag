@@ -35,6 +35,7 @@ def sentence_embeddings(text:str, model:EMBEDDING_MODEL, cache=False, sentensize
         sentences = sentensizer(text)
         logging.info(f"Done sentensizing in {time.time()-start:.2f}s")
     else:
+        logging.info("Sentensizing nltk")
         sentences = nltk.sent_tokenize(text)
     data = openai.embeddings.create(input=sentences, model=model).data
     logging.info("API answered with embeddings...")
