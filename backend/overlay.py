@@ -4,9 +4,12 @@ logging.basicConfig(level=logging.DEBUG)
 from doctr.io import DocumentFile
 import numpy as np
 
+
 type UpperLeft = tuple[float, float]
 type LowerRight = tuple[float, float]
 type WordGeometry = tuple[UpperLeft, LowerRight] # values are in [0,1]
+
+
 
 type ImageMatrix = np.ndarray[tuple[int, ...], np.dtype[np.uint8]]
 

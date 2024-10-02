@@ -11,3 +11,4 @@ openai_api_key.sh
 *.pdf
 .env
 *.rdb
+cli_testing.py

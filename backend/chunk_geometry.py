@@ -9,7 +9,7 @@ Assumptions:
     1) all the chunks are all contained in the text, in the correct order.
         with the possible exception the first non-word charaters
         in the first chunk (useful in inductive steps).
-    2) Every word from the ocr result is contained in some chunk.
+    2) Every word from the ocr result is contained in some chunk exception for possibly trailing non-alnum characters.
     3) word order is preserved.
     4) Some words are empty words (happens in formulas and some other edge cases)
 
@@ -70,6 +70,6 @@ if __name__ == '__main__':
     from ocr import capture
     with open('AO.pdf', 'rb') as f:
         fb = f.read()
-        text, words = capture(fb, 20, 20)
+        text, words = capture(fb, 20, 30)
         chunks = nltk.sent_tokenize(text)
         chunks_metadata = get_chunks_metadata(chunks, words)
