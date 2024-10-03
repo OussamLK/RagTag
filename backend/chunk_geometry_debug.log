@@ -1,0 +1,2214 @@
+chunk_geometry.debug_logger:DEBUG:initialized...
+
+chunk_geometry.debug_logger:DEBUG:words are ['Pharmacie', 'Centrale', 'des', 'Hôpitaux', 'AONO', '09/2023', '<', 'Transport', 'du', 'Personnel-', 'Direction', 'Générale', '>', '1-', 'Une', 'déclaration', 'de', 'candidature(Amnexe', 'I),', 'dûment', 'remplie', 'et', 'signée', '<<', 'par', 'le', 'soumissionnaire', '>', '2-', 'Une', 'déclaration', 'de', 'probité', '(AnnexeIV),', 'dûment', 'remplie', 'et', 'signéex', 'par', 'le', 'soumissionnaire', '>', '3-', 'Une', 'copie', 'du', 'bordereau', 'de', 'paiement', 'des', 'frais', 'de', 'participation', 'à', "l'appel", "d'offres", ';', '4-', 'Une', 'copie', 'des', 'statuts', 'pour', 'les', 'sociétés', ';', '5-', 'Une', 'délégation', 'de', 'pouvoir', 'le', 'cas', 'échéant.', '(Annexe', 'V)', '6-', 'Les', 'bilans', 'de', "l'entreprise", 'pour', 'les', '03', 'dernières', 'années.', ';', '7-', 'Un', 'extrait', 'du', 'casier', 'judiciaire', 'datant', 'de', 'moins', 'de', '03', 'mois', 'du', 'soumissionnaire', "lorsqu'il", "s'agit", "d'une", 'personne', 'physique,', 'et', 'du', 'gérant', 'ou', 'du', 'directeur', 'général', 'de', "l'entreprise", "lorsqu'il", "s'agit", "d'une", 'personne', 'morale.', '8-', 'Une', 'Copie', 'du', 'registre', 'de', 'commerce.', '9-', 'Le', 'NIF.', '10-', 'Extrait', 'de', 'rôle', 'apuré', 'ou', 'avec', 'échéancier', 'en', 'cours', 'de', 'validité.', '11-Une', 'copie', 'des', 'attestations', 'de', 'mise', 'à', 'jour', 'envers', 'les', 'organismes', 'parafiscaux', '(CNAS,', 'CASNOS)', 'en', 'cours', 'de', 'validité', 'ou', 'tout', 'document', 'justifiant', 'la', 'situation', 'régulière', 'vis-à-', 'vis', 'les', 'différentes', 'caisses.', '12-1', 'Une', 'copie', 'de', "l'attestation", 'de', 'dépôt', 'légal', 'des', 'comptes', 'sociaux.', '13-', 'Convention', 'de', 'groupement,', 'dans', 'le', 'cas', "d'un", 'groupement', 'momentané', "d'entreprise.", 'II', 'est', 'à', 'préciser', 'que', 'chaque', 'soumissionnaire', 'doit', 'présenter', 'un', 'seul', 'dossier', 'de', 'candidature', 'en', 'spécifiant', 'le', 'ou', 'les', 'lot', '(s)', 'concernée(s)', '(voir', 'Annexe', 'noIII)', 'NB:', 'Conformément', 'à', "l'article", '32', 'de', 'la', 'procédure', 'de', 'passation', 'des', 'commandes', 'et', 'marchés', 'de', 'la', 'PCH,', 'les', 'points', '7-8-9-10-11', 'et', '12,', 'sont', 'exigés', 'uniquement', 'de', "l'attributaire", 'du', 'marché,', 'qui', 'doit', 'les', 'fournir', 'dans', 'un', 'délai', 'maximum', 'de', '10', 'jours', 'à', 'compter', 'de', 'la', 'date', 'de', 'sa', 'saisine,', 'et', 'en', 'tout', 'état', 'de', 'cause,', 'avant', 'la', 'publication', 'de', "l'avis", "d'attribution", 'provisoire', 'du', 'marché,', 'sous', 'peine', "d'écarter", "l'offre", 'concernée', 'et', 'de', 'reprendre', 'la', 'procédure', "d'attribution", 'du', 'marché.', 'Les', 'informations', 'contenues', 'dans', 'les', 'documents', 'suscitées', 'doivent', 'être', 'conformes', 'à', 'celles', 'figurant', 'dans', 'la', 'déclaration', 'de', 'candidature.', "II-L'offre", 'technique', ':', "L'offre", 'technique', 'doit', 'contenir', ':', '1.', 'La', 'Déclaration', 'à', 'souscrire', '(Annexe', 'III)', 'dûment', 'renseignée', 'et', 'signée', ';', '2.', "L'original", 'du', 'présent', 'cahier', 'des', 'charges', 'dûment', 'signé', 'et', 'paraphé', 'par', 'le', 'soumissionnaire', 'portant,', 'la', 'mention', 'manuscrite', 'lu', 'et', 'accepté', ';', '3.', 'Attestations', 'de', 'bonne', 'exécution', ';', '4.', 'Copies', 'des', 'cartes', 'grises', 'ou', 'cartes', 'jaunes', 'des', 'autocars', 'du', 'soumissionnaire', 'entrant', 'dans', 'le', 'cadre', 'du', 'présent', 'cahier', 'des', 'charges', ';(pour', 'chaque', 'lot)', '5.', 'Copies', 'des', 'permis', 'de', 'conduire', 'des', 'chauffeurs', '(pour', 'chaque', 'lot)', 'Page', '10', 'sur', '47']
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Pharmacie'
+to '' after seeing word
+'Pharmacie'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Centrale des Hôpitaux
+'
+to ' des Hôpitaux
+' after seeing word
+'Centrale'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' des Hôpitaux
+'
+to ' Hôpitaux
+' after seeing word
+'des'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' Hôpitaux
+'
+to '
+' after seeing word
+'Hôpitaux'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'AONO'
+to '' after seeing word
+'AONO'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '09/2023
+< Transport du Personnel-'
+to '
+< Transport du Personnel-' after seeing word
+'09/2023'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '
+< Transport du Personnel-'
+to ' Transport du Personnel-' after seeing word
+'<'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' Transport du Personnel-'
+to ' du Personnel-' after seeing word
+'Transport'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' du Personnel-'
+to ' Personnel-' after seeing word
+'du'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' Personnel-'
+to '' after seeing word
+'Personnel-'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Direction Générale >
+1-'
+to ' Générale >
+1-' after seeing word
+'Direction'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' Générale >
+1-'
+to ' >
+1-' after seeing word
+'Générale'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' >
+1-'
+to '
+1-' after seeing word
+'>'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Une déclaration de candidature(Amnexe I), dûment remplie et signée << par le
+soumissionnaire >
+'
+to ' déclaration de candidature(Amnexe I), dûment remplie et signée << par le
+soumissionnaire >
+' after seeing word
+'Une'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' déclaration de candidature(Amnexe I), dûment remplie et signée << par le
+soumissionnaire >
+'
+to ' de candidature(Amnexe I), dûment remplie et signée << par le
+soumissionnaire >
+' after seeing word
+'déclaration'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' de candidature(Amnexe I), dûment remplie et signée << par le
+soumissionnaire >
+'
+to ' candidature(Amnexe I), dûment remplie et signée << par le
+soumissionnaire >
+' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' candidature(Amnexe I), dûment remplie et signée << par le
+soumissionnaire >
+'
+to ' I), dûment remplie et signée << par le
+soumissionnaire >
+' after seeing word
+'candidature(Amnexe'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' I), dûment remplie et signée << par le
+soumissionnaire >
+'
+to ' dûment remplie et signée << par le
+soumissionnaire >
+' after seeing word
+'I),'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' dûment remplie et signée << par le
+soumissionnaire >
+'
+to ' remplie et signée << par le
+soumissionnaire >
+' after seeing word
+'dûment'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' remplie et signée << par le
+soumissionnaire >
+'
+to ' et signée << par le
+soumissionnaire >
+' after seeing word
+'remplie'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' et signée << par le
+soumissionnaire >
+'
+to ' signée << par le
+soumissionnaire >
+' after seeing word
+'et'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' signée << par le
+soumissionnaire >
+'
+to ' << par le
+soumissionnaire >
+' after seeing word
+'signée'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' << par le
+soumissionnaire >
+'
+to ' par le
+soumissionnaire >
+' after seeing word
+'<<'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' par le
+soumissionnaire >
+'
+to ' le
+soumissionnaire >
+' after seeing word
+'par'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' le
+soumissionnaire >
+'
+to '
+soumissionnaire >
+' after seeing word
+'le'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '
+soumissionnaire >
+'
+to ' >
+' after seeing word
+'soumissionnaire'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Une déclaration de probité (AnnexeIV), dûment remplie et signéex par le
+soumissionnaire >
+'
+to '
+' after seeing word
+'>'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Une copie du bordereau de paiement des frais de participation à l'appel
+d'offres ;
+'
+to ' copie du bordereau de paiement des frais de participation à l'appel
+d'offres ;
+' after seeing word
+'Une'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' copie du bordereau de paiement des frais de participation à l'appel
+d'offres ;
+'
+to 'reau de paiement des frais de participation à l'appel
+d'offres ;
+' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'reau de paiement des frais de participation à l'appel
+d'offres ;
+'
+to 'ticipation à l'appel
+d'offres ;
+' after seeing word
+'par'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'ticipation à l'appel
+d'offres ;
+'
+to ' l'appel
+d'offres ;
+' after seeing word
+'à'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' l'appel
+d'offres ;
+'
+to '
+d'offres ;
+' after seeing word
+'l'appel'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '
+d'offres ;
+'
+to ' ;
+' after seeing word
+'d'offres'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Une copie des statuts pour les sociétés ;
+5-'
+to '
+5-' after seeing word
+';'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Une délégation de pouvoir le cas échéant.'
+to ' délégation de pouvoir le cas échéant.' after seeing word
+'Une'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' délégation de pouvoir le cas échéant.'
+to ' de pouvoir le cas échéant.' after seeing word
+'délégation'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' de pouvoir le cas échéant.'
+to ' pouvoir le cas échéant.' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' pouvoir le cas échéant.'
+to ' le cas échéant.' after seeing word
+'pouvoir'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' le cas échéant.'
+to ' cas échéant.' after seeing word
+'le'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' cas échéant.'
+to ' échéant.' after seeing word
+'cas'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' échéant.'
+to '' after seeing word
+'échéant.'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Annexe V)
+'
+to '
+' after seeing word
+'V)'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Les bilans de l'entreprise pour les 03 dernières années.'
+to ' bilans de l'entreprise pour les 03 dernières années.' after seeing word
+'Les'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' bilans de l'entreprise pour les 03 dernières années.'
+to ' de l'entreprise pour les 03 dernières années.' after seeing word
+'bilans'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' de l'entreprise pour les 03 dernières années.'
+to ' l'entreprise pour les 03 dernières années.' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' l'entreprise pour les 03 dernières années.'
+to ' pour les 03 dernières années.' after seeing word
+'l'entreprise'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' pour les 03 dernières années.'
+to ' les 03 dernières années.' after seeing word
+'pour'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' les 03 dernières années.'
+to ' 03 dernières années.' after seeing word
+'les'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' 03 dernières années.'
+to ' dernières années.' after seeing word
+'03'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' dernières années.'
+to ' années.' after seeing word
+'dernières'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' années.'
+to '' after seeing word
+'années.'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ';
+7-'
+to '
+7-' after seeing word
+';'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Un extrait du casier judiciaire datant de moins de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' extrait du casier judiciaire datant de moins de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'Un'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' extrait du casier judiciaire datant de moins de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' du casier judiciaire datant de moins de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'extrait'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' du casier judiciaire datant de moins de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' casier judiciaire datant de moins de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'du'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' casier judiciaire datant de moins de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' judiciaire datant de moins de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'casier'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' judiciaire datant de moins de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' datant de moins de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'judiciaire'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' datant de moins de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' de moins de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'datant'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' de moins de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' moins de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' moins de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'moins'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'03'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'mois'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'du'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to '
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'soumissionnaire'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'lorsqu'il'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'s'agit'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'d'une'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'personne'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'physique,'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'et'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'du'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'gérant'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'ou'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'du'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'directeur'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to '
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'général'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' l'entreprise lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' l'entreprise lorsqu'il s'agit d'une personne morale.
+'
+to ' lorsqu'il s'agit d'une personne morale.
+' after seeing word
+'l'entreprise'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' lorsqu'il s'agit d'une personne morale.
+'
+to ' s'agit d'une personne morale.
+' after seeing word
+'lorsqu'il'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' s'agit d'une personne morale.
+'
+to ' d'une personne morale.
+' after seeing word
+'s'agit'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' d'une personne morale.
+'
+to ' personne morale.
+' after seeing word
+'d'une'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' personne morale.
+'
+to ' morale.
+' after seeing word
+'personne'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' morale.
+'
+to '
+' after seeing word
+'morale.'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Une Copie du registre de commerce.
+'
+to ' Copie du registre de commerce.
+' after seeing word
+'Une'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' Copie du registre de commerce.
+'
+to ' du registre de commerce.
+' after seeing word
+'Copie'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' du registre de commerce.
+'
+to ' registre de commerce.
+' after seeing word
+'du'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' registre de commerce.
+'
+to ' de commerce.
+' after seeing word
+'registre'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' de commerce.
+'
+to ' commerce.
+' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' commerce.
+'
+to '
+' after seeing word
+'commerce.'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Le NIF.
+'
+to ' NIF.
+' after seeing word
+'Le'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' NIF.
+'
+to '
+' after seeing word
+'NIF.'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '10- Extrait de rôle apuré ou avec échéancier en cours de validité.
+'
+to ' Extrait de rôle apuré ou avec échéancier en cours de validité.
+' after seeing word
+'10-'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' Extrait de rôle apuré ou avec échéancier en cours de validité.
+'
+to ' de rôle apuré ou avec échéancier en cours de validité.
+' after seeing word
+'Extrait'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' de rôle apuré ou avec échéancier en cours de validité.
+'
+to ' rôle apuré ou avec échéancier en cours de validité.
+' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' rôle apuré ou avec échéancier en cours de validité.
+'
+to ' apuré ou avec échéancier en cours de validité.
+' after seeing word
+'rôle'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' apuré ou avec échéancier en cours de validité.
+'
+to ' ou avec échéancier en cours de validité.
+' after seeing word
+'apuré'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' ou avec échéancier en cours de validité.
+'
+to ' avec échéancier en cours de validité.
+' after seeing word
+'ou'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' avec échéancier en cours de validité.
+'
+to ' échéancier en cours de validité.
+' after seeing word
+'avec'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' échéancier en cours de validité.
+'
+to ' en cours de validité.
+' after seeing word
+'échéancier'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' en cours de validité.
+'
+to ' cours de validité.
+' after seeing word
+'en'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' cours de validité.
+'
+to ' de validité.
+' after seeing word
+'cours'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' de validité.
+'
+to ' validité.
+' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' validité.
+'
+to '
+' after seeing word
+'validité.'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '11-Une copie des attestations de mise à jour envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' copie des attestations de mise à jour envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'11-Une'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' copie des attestations de mise à jour envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' des attestations de mise à jour envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'copie'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' des attestations de mise à jour envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' attestations de mise à jour envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'des'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' attestations de mise à jour envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' de mise à jour envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'attestations'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' de mise à jour envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' mise à jour envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' mise à jour envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' à jour envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'mise'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' à jour envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' jour envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'à'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' jour envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'jour'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' envers les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'envers'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' les organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'les'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' organismes parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'organismes'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' parafiscaux (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'parafiscaux'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' (CNAS,
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to '
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'(CNAS,'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '
+CASNOS) en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'CASNOS)'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' en cours de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' cours de validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'en'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' cours de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' de validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'cours'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' de validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' validité ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' validité ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' ou tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'validité'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' ou tout document justifiant la situation régulière vis-à-
+vis'
+to ' tout document justifiant la situation régulière vis-à-
+vis' after seeing word
+'ou'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' tout document justifiant la situation régulière vis-à-
+vis'
+to ' document justifiant la situation régulière vis-à-
+vis' after seeing word
+'tout'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' document justifiant la situation régulière vis-à-
+vis'
+to ' justifiant la situation régulière vis-à-
+vis' after seeing word
+'document'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' justifiant la situation régulière vis-à-
+vis'
+to ' la situation régulière vis-à-
+vis' after seeing word
+'justifiant'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' la situation régulière vis-à-
+vis'
+to ' situation régulière vis-à-
+vis' after seeing word
+'la'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' situation régulière vis-à-
+vis'
+to ' régulière vis-à-
+vis' after seeing word
+'situation'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' régulière vis-à-
+vis'
+to ' vis-à-
+vis' after seeing word
+'régulière'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' vis-à-
+vis'
+to '
+vis' after seeing word
+'vis-à-'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '
+vis'
+to '' after seeing word
+'vis'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'les différentes caisses.
+12-1'
+to ' différentes caisses.
+12-1' after seeing word
+'les'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' différentes caisses.
+12-1'
+to ' caisses.
+12-1' after seeing word
+'différentes'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' caisses.
+12-1'
+to '
+12-1' after seeing word
+'caisses.'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '
+12-1'
+to '' after seeing word
+'12-1'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Une copie de l'attestation de dépôt légal des comptes sociaux.
+'
+to ' copie de l'attestation de dépôt légal des comptes sociaux.
+' after seeing word
+'Une'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' copie de l'attestation de dépôt légal des comptes sociaux.
+'
+to ' de l'attestation de dépôt légal des comptes sociaux.
+' after seeing word
+'copie'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' de l'attestation de dépôt légal des comptes sociaux.
+'
+to ' l'attestation de dépôt légal des comptes sociaux.
+' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' l'attestation de dépôt légal des comptes sociaux.
+'
+to ' de dépôt légal des comptes sociaux.
+' after seeing word
+'l'attestation'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' de dépôt légal des comptes sociaux.
+'
+to ' dépôt légal des comptes sociaux.
+' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' dépôt légal des comptes sociaux.
+'
+to ' légal des comptes sociaux.
+' after seeing word
+'dépôt'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' légal des comptes sociaux.
+'
+to ' des comptes sociaux.
+' after seeing word
+'légal'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' des comptes sociaux.
+'
+to ' comptes sociaux.
+' after seeing word
+'des'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' comptes sociaux.
+'
+to ' sociaux.
+' after seeing word
+'comptes'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' sociaux.
+'
+to '
+' after seeing word
+'sociaux.'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Convention de groupement, dans le cas d'un groupement momentané
+d'entreprise.
+II'
+to ' de groupement, dans le cas d'un groupement momentané
+d'entreprise.
+II' after seeing word
+'Convention'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' de groupement, dans le cas d'un groupement momentané
+d'entreprise.
+II'
+to ' groupement, dans le cas d'un groupement momentané
+d'entreprise.
+II' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' groupement, dans le cas d'un groupement momentané
+d'entreprise.
+II'
+to ' dans le cas d'un groupement momentané
+d'entreprise.
+II' after seeing word
+'groupement,'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' dans le cas d'un groupement momentané
+d'entreprise.
+II'
+to ' le cas d'un groupement momentané
+d'entreprise.
+II' after seeing word
+'dans'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' le cas d'un groupement momentané
+d'entreprise.
+II'
+to ' cas d'un groupement momentané
+d'entreprise.
+II' after seeing word
+'le'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' cas d'un groupement momentané
+d'entreprise.
+II'
+to ' d'un groupement momentané
+d'entreprise.
+II' after seeing word
+'cas'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' d'un groupement momentané
+d'entreprise.
+II'
+to ' groupement momentané
+d'entreprise.
+II' after seeing word
+'d'un'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' groupement momentané
+d'entreprise.
+II'
+to ' momentané
+d'entreprise.
+II' after seeing word
+'groupement'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' momentané
+d'entreprise.
+II'
+to '
+d'entreprise.
+II' after seeing word
+'momentané'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '
+d'entreprise.
+II'
+to '
+II' after seeing word
+'d'entreprise.'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'est à préciser que chaque soumissionnaire doit présenter un seul dossier de candidature
+en spécifiant le ou les lot (s) concernée(s) (voir Annexe noIII)
+NB: Conformément à l'article 32 de la procédure de passation des commandes et
+marchés de la PCH, les points 7-8-9-10-11 et 12, sont exigés uniquement de
+l'attributaire du marché, qui doit les fournir dans un délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+to 'I)
+NB: Conformément à l'article 32 de la procédure de passation des commandes et
+marchés de la PCH, les points 7-8-9-10-11 et 12, sont exigés uniquement de
+l'attributaire du marché, qui doit les fournir dans un délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+' after seeing word
+'II'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'I)
+NB: Conformément à l'article 32 de la procédure de passation des commandes et
+marchés de la PCH, les points 7-8-9-10-11 et 12, sont exigés uniquement de
+l'attributaire du marché, qui doit les fournir dans un délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+to ' l'article 32 de la procédure de passation des commandes et
+marchés de la PCH, les points 7-8-9-10-11 et 12, sont exigés uniquement de
+l'attributaire du marché, qui doit les fournir dans un délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+' after seeing word
+'à'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' l'article 32 de la procédure de passation des commandes et
+marchés de la PCH, les points 7-8-9-10-11 et 12, sont exigés uniquement de
+l'attributaire du marché, qui doit les fournir dans un délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+to 'ment de
+l'attributaire du marché, qui doit les fournir dans un délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+' after seeing word
+'que'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'ment de
+l'attributaire du marché, qui doit les fournir dans un délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+to ' les fournir dans un délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+' after seeing word
+'doit'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' les fournir dans un délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+to ' délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+' after seeing word
+'un'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+to ' 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+to ' tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+' after seeing word
+'en'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+to 't état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+' after seeing word
+'ou'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 't état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+to ' cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+to ' publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+' after seeing word
+'la'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+to ' d'attribution du marché.
+' after seeing word
+'procédure'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' d'attribution du marché.
+'
+to ' marché.
+' after seeing word
+'du'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' marché.
+'
+to '.
+' after seeing word
+'marché'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Les informations contenues dans les documents suscitées doivent être conformes à
+celles figurant dans la déclaration de candidature.
+II'
+to ' documents suscitées doivent être conformes à
+celles figurant dans la déclaration de candidature.
+II' after seeing word
+'les'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' documents suscitées doivent être conformes à
+celles figurant dans la déclaration de candidature.
+II'
+to ' la déclaration de candidature.
+II' after seeing word
+'dans'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' la déclaration de candidature.
+II'
+to ' candidature.
+II' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' candidature.
+II'
+to '
+II' after seeing word
+'candidature.'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '-L'offre technique :
+L'offre technique doit contenir :
+1.'
+to ' :
+L'offre technique doit contenir :
+1.' after seeing word
+'technique'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' :
+L'offre technique doit contenir :
+1.'
+to '
+L'offre technique doit contenir :
+1.' after seeing word
+':'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '
+L'offre technique doit contenir :
+1.'
+to ' technique doit contenir :
+1.' after seeing word
+'L'offre'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' technique doit contenir :
+1.'
+to ' doit contenir :
+1.' after seeing word
+'technique'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' doit contenir :
+1.'
+to ' contenir :
+1.' after seeing word
+'doit'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' contenir :
+1.'
+to ' :
+1.' after seeing word
+'contenir'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' :
+1.'
+to '
+1.' after seeing word
+':'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'La Déclaration à souscrire (Annexe III) dûment renseignée et signée ;
+2.'
+to ' Déclaration à souscrire (Annexe III) dûment renseignée et signée ;
+2.' after seeing word
+'La'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' Déclaration à souscrire (Annexe III) dûment renseignée et signée ;
+2.'
+to ' à souscrire (Annexe III) dûment renseignée et signée ;
+2.' after seeing word
+'Déclaration'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' à souscrire (Annexe III) dûment renseignée et signée ;
+2.'
+to ' souscrire (Annexe III) dûment renseignée et signée ;
+2.' after seeing word
+'à'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' souscrire (Annexe III) dûment renseignée et signée ;
+2.'
+to ' (Annexe III) dûment renseignée et signée ;
+2.' after seeing word
+'souscrire'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' (Annexe III) dûment renseignée et signée ;
+2.'
+to ' III) dûment renseignée et signée ;
+2.' after seeing word
+'(Annexe'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' III) dûment renseignée et signée ;
+2.'
+to ' dûment renseignée et signée ;
+2.' after seeing word
+'III)'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' dûment renseignée et signée ;
+2.'
+to ' renseignée et signée ;
+2.' after seeing word
+'dûment'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' renseignée et signée ;
+2.'
+to ' et signée ;
+2.' after seeing word
+'renseignée'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' et signée ;
+2.'
+to ' signée ;
+2.' after seeing word
+'et'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' signée ;
+2.'
+to ' ;
+2.' after seeing word
+'signée'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' ;
+2.'
+to '
+2.' after seeing word
+';'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'L'original du présent cahier des charges dûment signé et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.'
+to ' du présent cahier des charges dûment signé et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.' after seeing word
+'L'original'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' du présent cahier des charges dûment signé et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.'
+to ' présent cahier des charges dûment signé et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.' after seeing word
+'du'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' présent cahier des charges dûment signé et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.'
+to ' cahier des charges dûment signé et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.' after seeing word
+'présent'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' cahier des charges dûment signé et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.'
+to ' des charges dûment signé et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.' after seeing word
+'cahier'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' des charges dûment signé et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.'
+to ' charges dûment signé et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.' after seeing word
+'des'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' charges dûment signé et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.'
+to ' dûment signé et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.' after seeing word
+'charges'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' dûment signé et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.'
+to ' signé et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.' after seeing word
+'dûment'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' signé et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.'
+to ' et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.' after seeing word
+'signé'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.'
+to ' paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.' after seeing word
+'et'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.'
+to ' par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.' after seeing word
+'paraphé'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.'
+to ' le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.' after seeing word
+'par'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.'
+to '
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.' after seeing word
+'le'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.'
+to ' portant, la mention manuscrite lu et accepté ;
+3.' after seeing word
+'soumissionnaire'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' portant, la mention manuscrite lu et accepté ;
+3.'
+to ' la mention manuscrite lu et accepté ;
+3.' after seeing word
+'portant,'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' la mention manuscrite lu et accepté ;
+3.'
+to ' mention manuscrite lu et accepté ;
+3.' after seeing word
+'la'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' mention manuscrite lu et accepté ;
+3.'
+to ' manuscrite lu et accepté ;
+3.' after seeing word
+'mention'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' manuscrite lu et accepté ;
+3.'
+to ' lu et accepté ;
+3.' after seeing word
+'manuscrite'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' lu et accepté ;
+3.'
+to ' et accepté ;
+3.' after seeing word
+'lu'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' et accepté ;
+3.'
+to ' accepté ;
+3.' after seeing word
+'et'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' accepté ;
+3.'
+to ' ;
+3.' after seeing word
+'accepté'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' ;
+3.'
+to '
+3.' after seeing word
+';'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Attestations de bonne exécution ;
+4.'
+to ' de bonne exécution ;
+4.' after seeing word
+'Attestations'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' de bonne exécution ;
+4.'
+to ' bonne exécution ;
+4.' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' bonne exécution ;
+4.'
+to ' exécution ;
+4.' after seeing word
+'bonne'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' exécution ;
+4.'
+to ' ;
+4.' after seeing word
+'exécution'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' ;
+4.'
+to '
+4.' after seeing word
+';'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Copies des cartes grises ou cartes jaunes des autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;'
+to ' des cartes grises ou cartes jaunes des autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;' after seeing word
+'Copies'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' des cartes grises ou cartes jaunes des autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;'
+to ' cartes grises ou cartes jaunes des autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;' after seeing word
+'des'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' cartes grises ou cartes jaunes des autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;'
+to ' grises ou cartes jaunes des autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;' after seeing word
+'cartes'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' grises ou cartes jaunes des autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;'
+to ' ou cartes jaunes des autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;' after seeing word
+'grises'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' ou cartes jaunes des autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;'
+to ' cartes jaunes des autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;' after seeing word
+'ou'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' cartes jaunes des autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;'
+to ' jaunes des autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;' after seeing word
+'cartes'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' jaunes des autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;'
+to ' des autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;' after seeing word
+'jaunes'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' des autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;'
+to ' autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;' after seeing word
+'des'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;'
+to ' du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;' after seeing word
+'autocars'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;'
+to ' soumissionnaire entrant dans
+le cadre du présent cahier des charges ;' after seeing word
+'du'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' soumissionnaire entrant dans
+le cadre du présent cahier des charges ;'
+to ' entrant dans
+le cadre du présent cahier des charges ;' after seeing word
+'soumissionnaire'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' entrant dans
+le cadre du présent cahier des charges ;'
+to ' dans
+le cadre du présent cahier des charges ;' after seeing word
+'entrant'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' dans
+le cadre du présent cahier des charges ;'
+to '
+le cadre du présent cahier des charges ;' after seeing word
+'dans'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '
+le cadre du présent cahier des charges ;'
+to ' cadre du présent cahier des charges ;' after seeing word
+'le'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' cadre du présent cahier des charges ;'
+to ' du présent cahier des charges ;' after seeing word
+'cadre'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' du présent cahier des charges ;'
+to ' présent cahier des charges ;' after seeing word
+'du'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' présent cahier des charges ;'
+to ' cahier des charges ;' after seeing word
+'présent'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' cahier des charges ;'
+to ' des charges ;' after seeing word
+'cahier'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' des charges ;'
+to ' charges ;' after seeing word
+'des'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' charges ;'
+to ' ;' after seeing word
+'charges'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '(pour chaque lot)
+5.'
+to ' lot)
+5.' after seeing word
+'chaque'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' lot)
+5.'
+to '
+5.' after seeing word
+'lot)'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from 'Copies des permis de conduire des chauffeurs (pour chaque lot)
+Page 10 sur 47'
+to ' des permis de conduire des chauffeurs (pour chaque lot)
+Page 10 sur 47' after seeing word
+'Copies'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' des permis de conduire des chauffeurs (pour chaque lot)
+Page 10 sur 47'
+to ' permis de conduire des chauffeurs (pour chaque lot)
+Page 10 sur 47' after seeing word
+'des'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' permis de conduire des chauffeurs (pour chaque lot)
+Page 10 sur 47'
+to ' de conduire des chauffeurs (pour chaque lot)
+Page 10 sur 47' after seeing word
+'permis'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' de conduire des chauffeurs (pour chaque lot)
+Page 10 sur 47'
+to ' conduire des chauffeurs (pour chaque lot)
+Page 10 sur 47' after seeing word
+'de'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' conduire des chauffeurs (pour chaque lot)
+Page 10 sur 47'
+to ' des chauffeurs (pour chaque lot)
+Page 10 sur 47' after seeing word
+'conduire'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' des chauffeurs (pour chaque lot)
+Page 10 sur 47'
+to ' chauffeurs (pour chaque lot)
+Page 10 sur 47' after seeing word
+'des'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' chauffeurs (pour chaque lot)
+Page 10 sur 47'
+to ' (pour chaque lot)
+Page 10 sur 47' after seeing word
+'chauffeurs'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' (pour chaque lot)
+Page 10 sur 47'
+to ' chaque lot)
+Page 10 sur 47' after seeing word
+'(pour'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' chaque lot)
+Page 10 sur 47'
+to ' lot)
+Page 10 sur 47' after seeing word
+'chaque'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' lot)
+Page 10 sur 47'
+to '
+Page 10 sur 47' after seeing word
+'lot)'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from '
+Page 10 sur 47'
+to ' 10 sur 47' after seeing word
+'Page'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' 10 sur 47'
+to ' sur 47' after seeing word
+'10'
+
+
+chunk_geometry.debug_logger:DEBUG:updating the chunk
+from ' sur 47'
+to ' 47' after seeing word
+'sur'
+
+

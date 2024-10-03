@@ -1,0 +1,375 @@
+I can not find word: '1-' in chunk:'Une déclaration de candidature(Amnexe I), dûment remplie et signée << par le
+soumissionnaire >
+' checked 1
+I can not find word: '2-' in chunk:'Une copie du bordereau de paiement des frais de participation à l'appel
+d'offres ;
+' checked 2
+I can not find word: 'déclaration' in chunk:' copie du bordereau de paiement des frais de participation à l'appel
+d'offres ;
+'
+I can not find word: 'probité' in chunk:'reau de paiement des frais de participation à l'appel
+d'offres ;
+'
+I can not find word: '(AnnexeIV),' in chunk:'reau de paiement des frais de participation à l'appel
+d'offres ;
+' checked (AnnexeIV
+I can not find word: 'dûment' in chunk:'reau de paiement des frais de participation à l'appel
+d'offres ;
+'
+I can not find word: 'remplie' in chunk:'reau de paiement des frais de participation à l'appel
+d'offres ;
+'
+I can not find word: 'et' in chunk:'reau de paiement des frais de participation à l'appel
+d'offres ;
+'
+I can not find word: 'signéex' in chunk:'reau de paiement des frais de participation à l'appel
+d'offres ;
+'
+I can not find word: 'le' in chunk:'ticipation à l'appel
+d'offres ;
+'
+I can not find word: 'soumissionnaire' in chunk:'ticipation à l'appel
+d'offres ;
+'
+I can not find word: '>' in chunk:'ticipation à l'appel
+d'offres ;
+' removed all all non alnum characters
+I can not find word: '3-' in chunk:'ticipation à l'appel
+d'offres ;
+' checked 3
+I can not find word: 'Une' in chunk:'ticipation à l'appel
+d'offres ;
+'
+I can not find word: 'copie' in chunk:'ticipation à l'appel
+d'offres ;
+'
+I can not find word: 'du' in chunk:'ticipation à l'appel
+d'offres ;
+'
+I can not find word: 'bordereau' in chunk:'ticipation à l'appel
+d'offres ;
+'
+I can not find word: 'de' in chunk:'ticipation à l'appel
+d'offres ;
+'
+I can not find word: 'paiement' in chunk:'ticipation à l'appel
+d'offres ;
+'
+I can not find word: 'des' in chunk:'ticipation à l'appel
+d'offres ;
+'
+I can not find word: 'frais' in chunk:'ticipation à l'appel
+d'offres ;
+'
+I can not find word: 'de' in chunk:'ticipation à l'appel
+d'offres ;
+'
+I can not find word: 'participation' in chunk:'ticipation à l'appel
+d'offres ;
+'
+I can not find word: '4-' in chunk:'Une délégation de pouvoir le cas échéant.' checked 4
+I can not find word: 'copie' in chunk:' délégation de pouvoir le cas échéant.'
+I can not find word: 'des' in chunk:' délégation de pouvoir le cas échéant.'
+I can not find word: 'statuts' in chunk:' délégation de pouvoir le cas échéant.'
+I can not find word: 'pour' in chunk:' délégation de pouvoir le cas échéant.'
+I can not find word: 'les' in chunk:' délégation de pouvoir le cas échéant.'
+I can not find word: 'sociétés' in chunk:' délégation de pouvoir le cas échéant.'
+I can not find word: ';' in chunk:' délégation de pouvoir le cas échéant.' removed all all non alnum characters
+I can not find word: '5-' in chunk:' délégation de pouvoir le cas échéant.' checked 5
+I can not find word: 'Une' in chunk:' délégation de pouvoir le cas échéant.'
+I can not find word: '(Annexe' in chunk:'Annexe V)
+'
+I can not find word: '6-' in chunk:'Les bilans de l'entreprise pour les 03 dernières années.' checked 6
+I can not find word: '7-' in chunk:'Un extrait du casier judiciaire datant de moins de 03 mois du soumissionnaire
+lorsqu'il s'agit d'une personne physique, et du gérant ou du directeur général
+de l'entreprise lorsqu'il s'agit d'une personne morale.
+' checked 7
+I can not find word: '8-' in chunk:'Une Copie du registre de commerce.
+' checked 8
+I can not find word: '9-' in chunk:'Le NIF.
+' checked 9
+I can not find word: '13-' in chunk:'Convention de groupement, dans le cas d'un groupement momentané
+d'entreprise.
+II' checked 13
+I can not find word: 'est' in chunk:'I)
+NB: Conformément à l'article 32 de la procédure de passation des commandes et
+marchés de la PCH, les points 7-8-9-10-11 et 12, sont exigés uniquement de
+l'attributaire du marché, qui doit les fournir dans un délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: 'préciser' in chunk:' l'article 32 de la procédure de passation des commandes et
+marchés de la PCH, les points 7-8-9-10-11 et 12, sont exigés uniquement de
+l'attributaire du marché, qui doit les fournir dans un délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: 'chaque' in chunk:'ment de
+l'attributaire du marché, qui doit les fournir dans un délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: 'soumissionnaire' in chunk:'ment de
+l'attributaire du marché, qui doit les fournir dans un délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: 'présenter' in chunk:' les fournir dans un délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: 'seul' in chunk:' délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: 'dossier' in chunk:' délai maximum de 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: 'candidature' in chunk:' 10 jours à
+compter de la date de sa saisine, et en tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: 'spécifiant' in chunk:' tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: 'le' in chunk:' tout état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: 'les' in chunk:'t état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: 'lot' in chunk:'t état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: '(s)' in chunk:'t état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+' checked (s
+I can not find word: 'concernée(s)' in chunk:'t état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+' checked concernée(s
+I can not find word: '(voir' in chunk:'t état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: 'Annexe' in chunk:'t état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: 'noIII)' in chunk:'t état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+' checked noIII
+I can not find word: 'NB:' in chunk:'t état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+' checked NB
+I can not find word: 'Conformément' in chunk:'t état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: 'à' in chunk:'t état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: 'l'article' in chunk:'t état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: '32' in chunk:'t état de cause, avant la publication de l'avis
+d'attribution provisoire du marché, sous peine d'écarter l'offre concernée et de
+reprendre la procédure d'attribution du marché.
+'
+I can not find word: 'de' in chunk:' d'attribution du marché.
+'
+I can not find word: 'passation' in chunk:' d'attribution du marché.
+'
+I can not find word: 'des' in chunk:' d'attribution du marché.
+'
+I can not find word: 'commandes' in chunk:' d'attribution du marché.
+'
+I can not find word: 'et' in chunk:' d'attribution du marché.
+'
+I can not find word: 'marchés' in chunk:' d'attribution du marché.
+'
+I can not find word: 'de' in chunk:' d'attribution du marché.
+'
+I can not find word: 'la' in chunk:' d'attribution du marché.
+'
+I can not find word: 'PCH,' in chunk:' d'attribution du marché.
+' checked PCH
+I can not find word: 'les' in chunk:' d'attribution du marché.
+'
+I can not find word: 'points' in chunk:' d'attribution du marché.
+'
+I can not find word: '7-8-9-10-11' in chunk:' d'attribution du marché.
+'
+I can not find word: 'et' in chunk:' d'attribution du marché.
+'
+I can not find word: '12,' in chunk:' d'attribution du marché.
+' checked 12
+I can not find word: 'sont' in chunk:' d'attribution du marché.
+'
+I can not find word: 'exigés' in chunk:' d'attribution du marché.
+'
+I can not find word: 'uniquement' in chunk:' d'attribution du marché.
+'
+I can not find word: 'de' in chunk:' d'attribution du marché.
+'
+I can not find word: 'l'attributaire' in chunk:' d'attribution du marché.
+'
+I can not find word: 'qui' in chunk:'Les informations contenues dans les documents suscitées doivent être conformes à
+celles figurant dans la déclaration de candidature.
+II'
+I can not find word: 'doit' in chunk:'Les informations contenues dans les documents suscitées doivent être conformes à
+celles figurant dans la déclaration de candidature.
+II'
+I can not find word: 'fournir' in chunk:' documents suscitées doivent être conformes à
+celles figurant dans la déclaration de candidature.
+II'
+I can not find word: 'un' in chunk:' la déclaration de candidature.
+II'
+I can not find word: 'délai' in chunk:' la déclaration de candidature.
+II'
+I can not find word: 'maximum' in chunk:' la déclaration de candidature.
+II'
+I can not find word: '10' in chunk:' candidature.
+II'
+I can not find word: 'jours' in chunk:' candidature.
+II'
+I can not find word: 'à' in chunk:' candidature.
+II'
+I can not find word: 'compter' in chunk:' candidature.
+II'
+I can not find word: 'de' in chunk:' candidature.
+II'
+I can not find word: 'la' in chunk:' candidature.
+II'
+I can not find word: 'date' in chunk:' candidature.
+II'
+I can not find word: 'de' in chunk:' candidature.
+II'
+I can not find word: 'sa' in chunk:' candidature.
+II'
+I can not find word: 'saisine,' in chunk:' candidature.
+II' checked saisine
+I can not find word: 'et' in chunk:' candidature.
+II'
+I can not find word: 'en' in chunk:' candidature.
+II'
+I can not find word: 'tout' in chunk:' candidature.
+II'
+I can not find word: 'état' in chunk:' candidature.
+II'
+I can not find word: 'de' in chunk:' candidature.
+II'
+I can not find word: 'cause,' in chunk:' candidature.
+II' checked cause
+I can not find word: 'avant' in chunk:' candidature.
+II'
+I can not find word: 'la' in chunk:' candidature.
+II'
+I can not find word: 'publication' in chunk:' candidature.
+II'
+I can not find word: 'de' in chunk:' candidature.
+II'
+I can not find word: 'l'avis' in chunk:' candidature.
+II'
+I can not find word: 'd'attribution' in chunk:' candidature.
+II'
+I can not find word: 'provisoire' in chunk:' candidature.
+II'
+I can not find word: 'du' in chunk:' candidature.
+II'
+I can not find word: 'marché,' in chunk:' candidature.
+II' checked marché
+I can not find word: 'sous' in chunk:' candidature.
+II'
+I can not find word: 'peine' in chunk:' candidature.
+II'
+I can not find word: 'd'écarter' in chunk:' candidature.
+II'
+I can not find word: 'l'offre' in chunk:' candidature.
+II'
+I can not find word: 'concernée' in chunk:' candidature.
+II'
+I can not find word: 'et' in chunk:' candidature.
+II'
+I can not find word: 'de' in chunk:' candidature.
+II'
+I can not find word: 'reprendre' in chunk:' candidature.
+II'
+I can not find word: 'la' in chunk:' candidature.
+II'
+I can not find word: 'procédure' in chunk:' candidature.
+II'
+I can not find word: 'd'attribution' in chunk:' candidature.
+II'
+I can not find word: 'du' in chunk:' candidature.
+II'
+I can not find word: 'marché.' in chunk:' candidature.
+II' checked marché
+I can not find word: 'Les' in chunk:' candidature.
+II'
+I can not find word: 'informations' in chunk:' candidature.
+II'
+I can not find word: 'contenues' in chunk:' candidature.
+II'
+I can not find word: 'dans' in chunk:' candidature.
+II'
+I can not find word: 'les' in chunk:' candidature.
+II'
+I can not find word: 'documents' in chunk:' candidature.
+II'
+I can not find word: 'suscitées' in chunk:' candidature.
+II'
+I can not find word: 'doivent' in chunk:' candidature.
+II'
+I can not find word: 'être' in chunk:' candidature.
+II'
+I can not find word: 'conformes' in chunk:' candidature.
+II'
+I can not find word: 'à' in chunk:' candidature.
+II'
+I can not find word: 'celles' in chunk:' candidature.
+II'
+I can not find word: 'figurant' in chunk:' candidature.
+II'
+I can not find word: 'dans' in chunk:' candidature.
+II'
+I can not find word: 'la' in chunk:' candidature.
+II'
+I can not find word: 'déclaration' in chunk:' candidature.
+II'
+I can not find word: 'de' in chunk:' candidature.
+II'
+I can not find word: 'II-L'offre' in chunk:'-L'offre technique :
+L'offre technique doit contenir :
+1.'
+I can not find word: '1.' in chunk:'La Déclaration à souscrire (Annexe III) dûment renseignée et signée ;
+2.' checked 1
+I can not find word: '2.' in chunk:'L'original du présent cahier des charges dûment signé et paraphé par le
+soumissionnaire portant, la mention manuscrite lu et accepté ;
+3.' checked 2
+I can not find word: '3.' in chunk:'Attestations de bonne exécution ;
+4.' checked 3
+I can not find word: '4.' in chunk:'Copies des cartes grises ou cartes jaunes des autocars du soumissionnaire entrant dans
+le cadre du présent cahier des charges ;' checked 4
+I can not find word: ';(pour' in chunk:'(pour chaque lot)
+5.'
+I can not find word: '5.' in chunk:'Copies des permis de conduire des chauffeurs (pour chaque lot)
+Page 10 sur 47' checked 5

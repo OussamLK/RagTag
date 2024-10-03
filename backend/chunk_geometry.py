@@ -1,6 +1,9 @@
+from app_types import OCRWord, Chunk
+import os
 from typing import Callable, TypedDict, Iterable, Any
 from pprint import pprint
 import redis
+import logging
 
 '''
 The task of corresponding chunk to a list of words is not trivial due to the problems of separators.
@@ -21,50 +24,70 @@ Observation:
     '''
 
 redis = redis.Redis()
+LANGUAGE = os.environ['LANGUAGE']
+logging.basicConfig(level=logging.WARNING)
+logger = logging.getLogger(__name__)
+file_handler = logging.FileHandler('chunk_geometry.log', mode='w')
+file_handler.setLevel(logging.WARNING)
+logger.addHandler(file_handler)
 
-from ocr import OCRWord
+debug_logger = logging.getLogger(f"{__name__}.debug_logger")
+debug_logger.setLevel(logging.DEBUG)
+debug_formatter = logging.Formatter("%(name)s:%(levelname)s:%(message)s\n")
+file_handler_debug = logging.FileHandler('chunk_geometry_debug.log', mode='w')
+file_handler_debug.setLevel(logging.DEBUG)
+file_handler_debug.setFormatter(debug_formatter)
+debug_logger.addHandler(file_handler_debug)
+debug_logger.debug("initialized...")
 
-def get_chunks_metadata(chunks:Iterable[str], words:Iterable[OCRWord])->list[list[OCRWord]]:
-    chunks = (chunk for chunk in chunks)
-    words = (word for word in words)
-    chunks_words:list[list[OCRWord]] = []
-    chunk_words:list[OCRWord] = []
+
+def get_chunks_geometry(chunk_texts: Iterable[str], words: Iterable[OCRWord]) -> list[list[OCRWord]]:
+    debug_logger.debug(f"words are {[word['text'] for word in words]}")
+    chunk_texts = iter(chunk_texts)
+    words = iter(words)
+    chunks_words: list[list[OCRWord]] = []
+    chunk_words: list[OCRWord] = []
     try:
-        chunk = next(chunks)
+        chunk = next(chunk_texts)
         word = next(words)
         while True:
             while len(word) < len(chunk):
                 wp = chunk.find(word['text'])
+                i = len(word['text'])
                 if wp < 0:
                     if word['text'][-1].isalnum():
-                        raise Exception(f"I can not find word: '{word['text']}' in chunk:'{chunk}'")
-                    #the last letter is probably some seperator
-                    i = len(word['text'])
+                        logger.warning(f"I can not find word: '{
+                            word['text']}' in chunk:'{chunk}'")
+                        word = next(words)
+                        continue
+                    # the last letter is probably some seperator
                     while not word['text'][i-1].isalnum() and i > 0:
-                        i-=1
+                        i -= 1
                     if i == 0:
-                        raise Exception(f"I can not find word: '{word['text']}' inside chunk {chunk} ")
+                        logger.warning(f"I can not find word: '{
+                            word['text']}' in chunk:'{chunk}' removed all all non alnum characters")
+                        word = next(words)
+                        continue
                     wp = chunk.find(word['text'][:i])
                     if wp < 0:
-                        raise Exception(f"I can not find word: '{word['text'][:i]}' inside chunk {chunk} ")
-
-                chunk = chunk[wp+len(word['text']):]
+                        logger.warning(f"I can not find word: '{
+                            word['text']}' in chunk:'{chunk}' checked {word['text'][:i]}")
+                        word = next(words)
+                        continue
+                offset = wp+len(word['text'][:i])
+                debug_logger.debug(f"updating the chunk\nfrom '{chunk}'\nto '{
+                    chunk[offset:]}' after seeing word\n'{word['text'][:i]}'\n")
+                chunk = chunk[offset:]
                 chunk_words.append(word)
                 word = next(words)
             chunks_words.append(chunk_words)
             chunk_words = []
-            chunk = next(chunks)
-            
+            chunk = next(chunk_texts)
+
     except StopIteration:
         return chunks_words
 
-source = '''These datasets are used in machine learning (ML) research and have been cited in peer-reviewed academic journals. Datasets are an integral part of the field of machine learning. Major advances in this field can result from advances in learning algorithms (such as deep learning), computer hardware, and, less-intuitively, the availability of high-quality training datasets. High-quality labeled training datasets for supervised and semi-supervised machine learning algorithms are usually difficult and expensive to produce because of the large amount of time needed to label the data. Although they do not need to be labeled, high-quality datasets for unsupervised learning can also be difficult and costly to produce.
 
-Many organizations, including governments, publish and share their datasets. The datasets are classified, based on the licenses, as Open data and Non-Open data.
-
-The datasets from various governmental-bodies are presented in List of open government data sites. The datasets are ported on open data portals. They are made available for searching, depositing and accessing through interfaces like Open API. The datasets are made available as various sorted types and subtypes.'''
-
-    
 if __name__ == '__main__':
     import nltk
     from ocr import capture
@@ -72,4 +95,4 @@ if __name__ == '__main__':
         fb = f.read()
         text, words = capture(fb, 20, 30)
         chunks = nltk.sent_tokenize(text)
-        chunks_metadata = get_chunks_metadata(chunks, words)
+        chunks_metadata = get_chunks_geometry(chunks, words)

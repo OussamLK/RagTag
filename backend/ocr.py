@@ -1,33 +1,36 @@
+from app_types import OCRWord
+from typing import TypedDict
+from overlay import highlight_boxes
+import logging
 import time
 import sys
 from redis import Redis
 from hashlib import sha256
 redis = Redis()
-import logging
 logging.basicConfig(level=logging.INFO)
-from overlay import highlight_boxes
-from typing import TypedDict
 
-class OCRWord(TypedDict):
-    text: str
-    geometry: tuple[tuple[float, float], tuple[float, float]]
 
-def capture(file:bytes, first_page: int, last_page:int, cache=False)->tuple[str, list[OCRWord]]:
+def capture(file: bytes, first_page: int, last_page: int, cache=False) -> tuple[str, list[OCRWord]]:
     '''Performs ocr on a pdf file given in bytes,
-    returns the entire text along with a list of word geometry'''
-    
-    result = _get_result(file, first_page=first_page, last_page=last_page, cache=cache)
-    words: list[OCRWord] = [OCRWord(text=word.render(), geometry=word.geometry) for page in result.pages #type: ignore
-                            for block in page.blocks
-                                for line in block.lines
-                                    for word in line.words]
-    return result.render(), words
+    returns full text and list of word geometry'''
 
-def _get_result(file:bytes,first_page=None, last_page=None, cache=False):
+    result = _get_result(file, first_page=first_page,
+                         last_page=last_page, cache=cache)
+    full_text = result.render()
+    words: list[OCRWord] = [OCRWord(text=word.render(), geometry=word.geometry, page=page_index+first_page)
+                            # type: ignore
+                            for page_index, page in enumerate(result.pages)
+                            for block in page.blocks
+                            for line in block.lines
+                            for word in line.words]
+    return full_text, words
+
+
+def _get_result(file: bytes, first_page=None, last_page=None, cache=False):
     from doctr.io import DocumentFile
     from doctr.models import ocr_predictor
     import torch
-    model = ocr_predictor(det_arch='db_resnet50',pretrained=True)
+    model = ocr_predictor(det_arch='db_resnet50', pretrained=True)
     if torch.cuda.is_available():
         logging.info("Using CUDA")
         device = torch.device('cuda')
@@ -46,13 +49,14 @@ def _get_result(file:bytes,first_page=None, last_page=None, cache=False):
     result = model(fragment)
     return result
 
-def _sha_segment(file:bytes, first_page, last_page):
+
+def _sha_segment(file: bytes, first_page, last_page):
     signature = f"{file}, pages {first_page}-{last_page}"
     return sha256(signature.encode('utf-8')).digest()
 
 
 if __name__ == '__main__':
-    #test: python3 orc file_path.pdf
+    # test: python3 orc file_path.pdf
     from pprint import pprint
     with open('AO.pdf', 'br') as f:
         fb = f.read()
