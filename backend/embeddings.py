@@ -1,3 +1,4 @@
+import numpy as np
 from app_types import Embedding
 import time
 import logging
@@ -6,10 +7,10 @@ from dotenv import load_dotenv
 import json
 from hashlib import sha256
 from redis import Redis
-from typing import Literal, TypedDict
+from typing import Literal, Iterable
 import openai
-import nltk
-nltk.download('punkt_tab')
+from app_types import Chunck
+import pickle
 redis = Redis()
 load_dotenv()
 logging.basicConfig(level=logging.INFO)
@@ -23,25 +24,23 @@ def sentensizer(text):
 EMBEDDING_MODEL = Literal['text-embedding-3-large', 'text-embedding-3-small']
 
 
-def sentence_embeddings(text: str, model: EMBEDDING_MODEL, cache=False, sentensizer=None) -> list[Embedding]:
-    sha = sha256((text+model).encode('utf-8')).digest()
+def sentence_embeddings(chuncks: Iterable[Chunck], model: EMBEDDING_MODEL, cache=False) -> list[Embedding]:
+    sig = (" ".join(chunck['context']
+           for chunck in chuncks)+'|'+model).encode('utf-8')
+    sha = sha256(sig).digest()
     if cache:
         if res := redis.get(sha):
-            return json.loads(res.decode('utf-8'))  # type: ignore
-    if sentensizer:
-        logging.info("Sentensizing the text using Spacy")
-        start = time.time()
-        sentences = sentensizer(text)
-        logging.info(f"Done sentensizing in {time.time()-start:.2f}s")
+            return pickle.loads(res)  # type: ignore
     else:
-        logging.info("Sentensizing nltk")
-        sentences = nltk.sent_tokenize(text)
-    data = openai.embeddings.create(input=sentences, model=model).data
+        redis.delete(sha)
+    contexts = [chunck['context'] for chunck in chuncks]
+    data = openai.embeddings.create(input=contexts, model=model).data
     logging.info("API answered with embeddings...")
-    embedding_vectors: map[list[float]] = map(
-        lambda datum: datum.embedding, data)
+    embedding_vectors: np.ndarray[int, np.dtype[np.float64]] = np.array(list(map(
+        lambda datum: datum.embedding, data)))
 
-    embeddings = [Embedding(sentence=sentence, embedding=embedding)
-                  for sentence, embedding in zip(sentences, embedding_vectors)]
-    redis.set(sha, json.dumps(embeddings).encode('utf-8'))
+    embeddings = [Embedding(chunck_id=chunck['id'], sentence=chunck['text'], vector=embedding, context=chunck['context'])  # type: ignore
+                  for chunck, embedding in zip(chuncks, embedding_vectors)]
+    if cache:
+        redis.set(sha, pickle.dumps(embeddings))
     return embeddings

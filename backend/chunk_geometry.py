@@ -1,5 +1,5 @@
 import re
-from app_types import OCRWord, Chunk
+from app_types import OCRWord, Chunck
 import os
 from typing import Callable, TypedDict, Iterable, Any
 from pprint import pprint
@@ -41,7 +41,7 @@ file_handler.setLevel(logging.WARNING)
 logger.addHandler(file_handler)
 
 debug_logger = logging.getLogger(f"{__name__}.debug_logger")
-debug_logger.setLevel(logging.DEBUG)
+debug_logger.setLevel(logging.WARNING)
 debug_formatter = logging.Formatter("%(name)s:%(levelname)s:%(message)s\n")
 file_handler_debug = logging.FileHandler('chunk_geometry_debug.log', mode='w')
 file_handler_debug.setLevel(logging.DEBUG)
@@ -88,6 +88,6 @@ if __name__ == '__main__':
     from ocr import capture
     with open('AO.pdf', 'rb') as f:
         fb = f.read()
-        text, words = capture(fb, 20, 30)
+        text, words, doc = capture(fb, 20, 30)
         chunks = nltk.sent_tokenize(text)
         chunks_metadata = get_chunks_geometry(chunks, words)

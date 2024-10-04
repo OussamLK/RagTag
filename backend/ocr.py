@@ -10,12 +10,14 @@ redis = Redis()
 logging.basicConfig(level=logging.INFO)
 
 
-def capture(file: bytes, first_page: int, last_page: int, cache=False) -> tuple[str, list[OCRWord]]:
+def capture(file: bytes, first_page: int, last_page: int, cache=False) -> tuple[str, list[OCRWord], list]:
     '''Performs ocr on a pdf file given in bytes,
-    returns full text and list of word geometry'''
+    returns full text and list of word geometry
+    document returned starts from the page 'first_page'
+    '''
 
-    result = _get_result(file, first_page=first_page,
-                         last_page=last_page, cache=cache)
+    result, document = _get_result(file, first_page=first_page,
+                                   last_page=last_page, cache=cache)
     words: list[OCRWord] = [OCRWord(text=word.render(), geometry=word.geometry, page=page_index+first_page)
                             # type: ignore
                             for page_index, page in enumerate(result.pages)
@@ -29,7 +31,7 @@ def capture(file: bytes, first_page: int, last_page: int, cache=False) -> tuple[
     for word in words:
         if '\n' in word['text']:
             raise Exception(f"word {word['text']} has a carriage return")
-    return full_text, words
+    return full_text, words, document
 
 
 def _get_result(file: bytes, first_page=None, last_page=None, cache=False):
@@ -53,7 +55,7 @@ def _get_result(file: bytes, first_page=None, last_page=None, cache=False):
     fragment = doc[first_page-1:last_page]
     logging.info(f"converting {len(fragment)} pages...")
     result = model(fragment)
-    return result
+    return result, doc[first_page-1:last_page]
 
 
 def _sha_segment(file: bytes, first_page, last_page):

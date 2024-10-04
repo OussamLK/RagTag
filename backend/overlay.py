@@ -1,4 +1,4 @@
-from app_types import Chunk
+from app_types import Chunck, Embedding
 import numpy as np
 from doctr.io import DocumentFile
 import logging
@@ -30,8 +30,22 @@ def highlight_boxes(image_matrix: ImageMatrix, boxes: list[WordGeometry]):
     return out
 
 
-def highlight_chunk(chunk: Chunk, document: list[ImageMatrix]):
-    pages: list[int] = list(set(word['page'] for word in chunk['words']))
+def highlight_chunck(chunck: Chunck, document: list[ImageMatrix], document_start_page: int = 1):
+    if len(chunck['words']) == 0:
+        raise Exception(
+            f"trying to highlight a chunck with no words, chunck id {chunck['id']}")
+    word_per_pages = [[]]
+    current_page = chunck_beginning = chunck['words'][0]['page']
+    for word in chunck['words']:
+        if current_page != word['page']:
+            word_per_pages.append([])  # create a new page
+        word_per_pages[-1].append(word)
+    images = []
+    for i, page in enumerate(word_per_pages):
+        boxes = [word['geometry'] for word in page]
+        page = document[i+chunck_beginning-document_start_page]
+        images.append(highlight_boxes(page, boxes))
+    return images
 
 
 if __name__ == '__main__':

@@ -1,5 +1,5 @@
 import spacy
-from app_types import Chunk, OCRWord
+from app_types import Chunck, OCRWord
 from typing import Iterable
 from chunk_geometry import get_chunks_geometry
 
@@ -18,10 +18,10 @@ def get_context(chuncks, index):
     return context
 
 
-def get_chuncks(text: str, words: list[OCRWord]) -> Iterable[Chunk]:
+def get_chuncks(text: str, words: list[OCRWord]) -> Iterable[Chunck]:
     model = spacy.load('fr_core_news_lg')
     chuncks = [chunk.text for chunk in model(text).sents]
 
     contexts = (get_context(chuncks, i) for i, _ in enumerate(chuncks))
     chunks_geometry = get_chunks_geometry(chuncks, words)
-    return [Chunk(text=chunck_text, context=context, words=chunk_gemetry) for chunck_text, context, chunk_gemetry in zip(chuncks, contexts, chunks_geometry) if chunck_filter(chunck_text)]
+    return [Chunck(id=i, text=chunck_text, context=context, words=chunk_gemetry) for i, (chunck_text, context, chunk_gemetry) in enumerate(zip(chuncks, contexts, chunks_geometry)) if chunck_filter(chunck_text)]
