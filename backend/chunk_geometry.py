@@ -51,6 +51,9 @@ debug_logger.debug("initialized...")
 
 
 def get_chunks_geometry(chuncks: Iterable[str], words: Iterable[OCRWord]) -> list[list[OCRWord]]:
+    for i, chunck in enumerate(chuncks):
+        if '\n' in chunck:
+            raise Exception(f"Chunk '{chunck}contains a \\n' id:{i}")
     chuncks_words: list[list[OCRWord]] = []
     chunck_words: list[OCRWord] = []
     chuncks = list(chuncks)
@@ -67,7 +70,7 @@ def get_chunks_geometry(chuncks: Iterable[str], words: Iterable[OCRWord]) -> lis
             wp = chunck.find(wt())
             if wp != 0:
                 raise Exception(f"word '{wt()}' should be prefix of chunck '{
-                                chuncks[ci]}' chunck is {ci=} and word is {wi=}")
+                                chunck}' chunck is {ci=} and word is {wi=}")
             offset = wp+len(wt())
             debug_logger.debug(f"updating the chunk\nfrom '{chunck}'\nto '{
                 chunck[offset:]}' after seeing word\n'{wt()}'\n")

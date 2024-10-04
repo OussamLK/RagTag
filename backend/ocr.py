@@ -26,6 +26,9 @@ def capture(file: bytes, first_page: int, last_page: int, cache=False) -> tuple[
     # It also makes more sense to have a space instead of a new paragraph when a sentence is split
     # At the end of a page
     full_text = " ".join(word['text'] for word in words)
+    for word in words:
+        if '\n' in word['text']:
+            raise Exception(f"word {word['text']} has a carriage return")
     return full_text, words
 
 
