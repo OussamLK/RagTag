@@ -12,3 +12,4 @@ openai_api_key.sh
 .env
 *.rdb
 cli_testing.py
+**.log

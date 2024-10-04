@@ -1,3 +1,4 @@
+import re
 from app_types import OCRWord, Chunk
 import os
 from typing import Callable, TypedDict, Iterable, Any
@@ -7,14 +8,22 @@ import logging
 
 '''
 The task of corresponding chunk to a list of words is not trivial due to the problems of separators.
+The issue seems to be exlusively when a chunck splits a word in two.
+ex: (Annexe) is split in `(` and `Annexe)`
+
+This still has a problem with chuncks that do not include ending `.` while words do.
+In this case, words are always included in the next chunck.
 
 Assumptions:
-    1) all the chunks are all contained in the text, in the correct order.
+    1) words do not have spaces in them.
+    2) Chuncks from the concatenation of the ocr word list (" ".join(words))
+    3) all the chunks are all contained in the text, in the correct order.
         with the possible exception the first non-word charaters
         in the first chunk (useful in inductive steps).
-    2) Every word from the ocr result is contained in some chunk exception for possibly trailing non-alnum characters.
-    3) word order is preserved.
-    4) Some words are empty words (happens in formulas and some other edge cases)
+    4) Every word from the ocr result is contained in some chunk.
+    5) word order is preserved.
+    6) Some words are empty words (happens in formulas and some other edge cases)
+    7) A chunck can start or end with a space
 
 Observation:
    This implies that
@@ -41,51 +50,45 @@ debug_logger.addHandler(file_handler_debug)
 debug_logger.debug("initialized...")
 
 
-def get_chunks_geometry(chunk_texts: Iterable[str], words: Iterable[OCRWord]) -> list[list[OCRWord]]:
-    debug_logger.debug(f"words are {[word['text'] for word in words]}")
-    chunk_texts = iter(chunk_texts)
-    words = iter(words)
-    chunks_words: list[list[OCRWord]] = []
-    chunk_words: list[OCRWord] = []
-    try:
-        chunk = next(chunk_texts)
-        word = next(words)
-        while True:
-            while len(word) < len(chunk):
-                wp = chunk.find(word['text'])
-                i = len(word['text'])
-                if wp < 0:
-                    if word['text'][-1].isalnum():
-                        logger.warning(f"I can not find word: '{
-                            word['text']}' in chunk:'{chunk}'")
-                        word = next(words)
-                        continue
-                    # the last letter is probably some seperator
-                    while not word['text'][i-1].isalnum() and i > 0:
-                        i -= 1
-                    if i == 0:
-                        logger.warning(f"I can not find word: '{
-                            word['text']}' in chunk:'{chunk}' removed all all non alnum characters")
-                        word = next(words)
-                        continue
-                    wp = chunk.find(word['text'][:i])
-                    if wp < 0:
-                        logger.warning(f"I can not find word: '{
-                            word['text']}' in chunk:'{chunk}' checked {word['text'][:i]}")
-                        word = next(words)
-                        continue
-                offset = wp+len(word['text'][:i])
-                debug_logger.debug(f"updating the chunk\nfrom '{chunk}'\nto '{
-                    chunk[offset:]}' after seeing word\n'{word['text'][:i]}'\n")
-                chunk = chunk[offset:]
-                chunk_words.append(word)
-                word = next(words)
-            chunks_words.append(chunk_words)
-            chunk_words = []
-            chunk = next(chunk_texts)
+def common_prefix(s1: str, s2: str) -> str:
+    substr = []
+    i = 0
+    while i < len(s1) and i < len(s2):
+        if s1[i] != s2[i]:
+            break
+        substr.append(s1[i])
+        i += 1
+    return ''.join(substr)
 
-    except StopIteration:
-        return chunks_words
+
+def get_chunks_geometry(chuncks: Iterable[str], words: Iterable[OCRWord]) -> list[list[OCRWord]]:
+    chuncks_words: list[list[OCRWord]] = []
+    chunck_words: list[OCRWord] = []
+    chuncks = list(chuncks)
+    words = list(words)
+    wi = 0  # word_index
+    def wt(): return words[wi]['text']
+    chunck_rest = ''
+    for ci, chunck in enumerate(chuncks):
+        debug_logger.debug(f"word is {wt()} while {wi=}")
+        chunck = chunck_rest + chunck
+        while wi < len(words):
+            if len(wt()) > len(chunck):
+                break
+            wp = chunck.find(wt())
+            if wp != 0:
+                raise Exception(f"word '{wt()}' should be prefix of chunck '{
+                                chuncks[ci]}' chunck is {ci=} and word is {wi=}")
+            offset = wp+len(wt())
+            debug_logger.debug(f"updating the chunk\nfrom '{chunck}'\nto '{
+                chunck[offset:]}' after seeing word\n'{wt()}'\n")
+            chunck = chunck[offset:].strip()
+            chunck_words.append(words[wi])
+            wi += 1
+        chuncks_words.append(chunck_words)
+        chunck_words = []
+        chunck_rest = chunck
+    return chuncks_words
 
 
 if __name__ == '__main__':
