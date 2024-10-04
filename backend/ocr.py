@@ -16,13 +16,16 @@ def capture(file: bytes, first_page: int, last_page: int, cache=False) -> tuple[
 
     result = _get_result(file, first_page=first_page,
                          last_page=last_page, cache=cache)
-    full_text = result.render()
     words: list[OCRWord] = [OCRWord(text=word.render(), geometry=word.geometry, page=page_index+first_page)
                             # type: ignore
                             for page_index, page in enumerate(result.pages)
                             for block in page.blocks
                             for line in block.lines
                             for word in line.words]
+    # Using this instead of result.render() to make it much easier to retrieve words from chucks
+    # It also makes more sense to have a space instead of a new paragraph when a sentence is split
+    # At the end of a page
+    full_text = " ".join(word['text'] for word in words)
     return full_text, words
 
 
