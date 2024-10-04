@@ -50,17 +50,6 @@ debug_logger.addHandler(file_handler_debug)
 debug_logger.debug("initialized...")
 
 
-def common_prefix(s1: str, s2: str) -> str:
-    substr = []
-    i = 0
-    while i < len(s1) and i < len(s2):
-        if s1[i] != s2[i]:
-            break
-        substr.append(s1[i])
-        i += 1
-    return ''.join(substr)
-
-
 def get_chunks_geometry(chuncks: Iterable[str], words: Iterable[OCRWord]) -> list[list[OCRWord]]:
     chuncks_words: list[list[OCRWord]] = []
     chunck_words: list[OCRWord] = []
