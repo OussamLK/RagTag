@@ -36,14 +36,15 @@ redis = redis.Redis()
 LANGUAGE = os.environ['LANGUAGE']
 logging.basicConfig(level=logging.WARNING)
 logger = logging.getLogger(__name__)
-file_handler = logging.FileHandler('chunk_geometry.log', mode='w')
+file_handler = logging.FileHandler('logs/chunk_geometry.log', mode='w')
 file_handler.setLevel(logging.WARNING)
 logger.addHandler(file_handler)
 
 debug_logger = logging.getLogger(f"{__name__}.debug_logger")
 debug_logger.setLevel(logging.WARNING)
 debug_formatter = logging.Formatter("%(name)s:%(levelname)s:%(message)s\n")
-file_handler_debug = logging.FileHandler('chunk_geometry_debug.log', mode='w')
+file_handler_debug = logging.FileHandler(
+    'logs/chunk_geometry_debug.log', mode='w')
 file_handler_debug.setLevel(logging.DEBUG)
 file_handler_debug.setFormatter(debug_formatter)
 debug_logger.addHandler(file_handler_debug)

@@ -1,17 +1,21 @@
-from flask import Flask, request
+from fastapi import FastAPI
+from pydantic import BaseModel, Base64Str
 from redis import Redis
 
 
-app = Flask(__name__)
+class PDFFile(BaseModel):
+    name: str
+    bytes: Base64Str
 
+
+app = FastAPI()
 redis = Redis()
 
-@app.route('/upload', methods=['POST'])
-def index():
-    file_b64 = request.json['fileB64'] #type: ignore
-    file_name:str = request.json['fileName'] #type:ignore
-    #task_id = compute_embeddings(file_name, file_b64)
-    return dict(fileId = file_name)
+
+@app.post('/upload')
+def index(file: PDFFile):
+    # task_id = compute_embeddings(file_name, file_b64)
+    return dict(file_name=file.name)
 
 # @app.route('/status/<task_id>')
 # def status(task_id):
