@@ -1,30 +1,43 @@
-from fastapi import FastAPI
-from pydantic import BaseModel, Base64Str
-from redis import Redis
+import models
+import schemata
+from fastapi import FastAPI, Depends
+from pydantic import BaseModel, Base64Str, Base64Bytes
+from sqlalchemy import create_engine
+from sqlalchemy.pool import StaticPool
+from sqlalchemy.orm import Session, sessionmaker
+
+engine = create_engine("sqlite+pysqlite:///:memory:",
+                       echo=True, connect_args={"check_same_thread": False}, poolclass=StaticPool)
+
+models.Base.metadata.create_all(bind=engine)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 
-class PDFFile(BaseModel):
-    name: str
-    bytes: Base64Str
+def get_session():
+    session = SessionLocal()
+    try:
+        yield session
+    finally:
+        session.close()
+
+
+class Embedding(BaseModel):
+    pass
 
 
 app = FastAPI()
-redis = Redis()
 
 
-@app.post('/upload')
-def index(file: PDFFile):
-    # task_id = compute_embeddings(file_name, file_b64)
-    return dict(file_name=file.name)
+@app.post('/documents')
+def post_document(file: schemata.CreateDocument, db: Session = Depends(get_session)):
+    '''Think of adding pagination to this API, do this right this time.'''
+    document = models.Document(**file.model_dump())
+    db.add(document)
+    db.commit()
+    return dict(file_name=file.file_name)
 
-# @app.route('/status/<task_id>')
-# def status(task_id):
-#     '''requests the status of document processing'''
-#     return dict(status=task_completed(task_id))
 
-# @app.route('/query', methods=['POST'])
-# def query():
-#     task_id:str = request.json['taskId'] #type: ignore
-#     query:str = request.json['query'] #type: ignore
-#     matches = best_matches(task_id, query, 5)
-#     return dict(matches=matches)
+@app.get('/documents')
+def get_documents(db: Session = Depends(get_session)):
+    documents = db.query(models.Document).all()
+    return {"documents": documents}

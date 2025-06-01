@@ -33,7 +33,6 @@ Observation:
     '''
 
 redis = redis.Redis()
-LANGUAGE = os.environ['LANGUAGE']
 logging.basicConfig(level=logging.WARNING)
 logger = logging.getLogger(__name__)
 file_handler = logging.FileHandler('logs/chunk_geometry.log', mode='w')

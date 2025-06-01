@@ -2,8 +2,6 @@ from app_types import OCRWord
 from typing import TypedDict
 from overlay import highlight_boxes
 import logging
-import time
-import sys
 from redis import Redis
 from hashlib import sha256
 redis = Redis()
